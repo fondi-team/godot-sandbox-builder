@@ -1,0 +1,27 @@
+# Godot build artifacts
+.godot/
+.godot_config/
+.godot_data/
+.godot_build_cache/
+export/
+*.import
+
+# .NET build artifacts
+bin/
+obj/
+TestResults/
+
+# mise / dotnet local installs
+.mise/
+.nuget/
+.tmp/
+env.sh
+
+# Large binary assets (download via prepare-env)
+Godot_v*_mono_linux*/
+Godot_mono.app/
+mono_export_templates.tpz
+pkgcache/
+
+# OS
+.DS_Store

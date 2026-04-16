@@ -1,0 +1,11 @@
+<Project Sdk="Godot.NET.Sdk/4.6.2">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+
+  <!-- Exclude the NUnit test project from Godot's build; tests/ is built separately -->
+  <ItemGroup>
+    <Compile Remove="tests/**" />
+  </ItemGroup>
+</Project>

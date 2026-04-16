@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="NUnit" Version="4.2.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+    <PackageReference Include="NUnitXml.TestLogger" Version="3.1.15" />
+  </ItemGroup>
+
+  <!-- Pull in the pure-C# Calculator class from the parent Godot project -->
+  <ItemGroup>
+    <Compile Include="../Calculator.cs" />
+  </ItemGroup>
+</Project>

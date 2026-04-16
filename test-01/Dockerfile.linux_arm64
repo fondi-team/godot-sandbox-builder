@@ -1,0 +1,15 @@
+FROM debian:bookworm-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        libssl3 \
+        libicu72 \
+        ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY export/linux_arm64/ ./
+
+RUN chmod +x test01.arm64
+
+ENTRYPOINT ["./test01.arm64"]
+CMD ["--headless", "--quit"]
