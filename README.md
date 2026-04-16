@@ -28,7 +28,7 @@ The tool grew out of a project at [fondi Inc.](https://www.fondi.fun/top/) where
 runtime-agnostic sandbox to build and test pure-C# business logic at speed, with no
 Unity licence required per sandboxed instance.
 
-Presented at **Godot Meetup Tokyo Vol.7 (2026-04-16)**.
+Presented at [Godot Meetup Tokyo Vol.7](https://godot-jp.connpass.com/event/386275/) (2026-04-16)**.
 
 ---
 
